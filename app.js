@@ -56,7 +56,7 @@ mongoDBconnect(process.env.MONGO_URI)
     });
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // API routing
 app.use(UserRouter);
